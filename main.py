@@ -1,9 +1,12 @@
 from colorama import init, Fore
 
 
-def divide_numbers(a, b):    
-    result = a / b
-    return result    
+def divide_numbers(a, b): 
+    try:   
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        return "Error: ZeroDivisionError"
 
 
 
